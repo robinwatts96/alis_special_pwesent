@@ -1,0 +1,119 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+   body {
+    background-image: url("bg.gif");
+  }
+  
+   #page-wrap {
+       width: 90%;
+       margin: 0 auto;
+  }
+  
+   @font-face {
+       font-family: 'comic';
+       src: url("comic.ttf");
+       src: url("comic.otf");
+  }
+   .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+  }
+   .center2 {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+  }
+   .center3 {
+       display:block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 25% 
+  }
+   .banner {
+       margin-top: 0px;
+       position: relative;
+       margin-left:auto;
+       margin-right:auto;
+       display:block;
+       text-align:center;
+       width:95%;
+  }
+  .flip {
+    transform: scaleX(-1);
+  }.flip2 {
+    transform: scaleY(-1);
+  }
+   .box1 {
+       float: left;
+       width: 300px;
+       margin-left: 10px;
+       margin-top: 10px;
+       padding: 5px;
+  }
+   .box2 {
+       float: right;
+       width: 300px;
+       margin-right: 10px;
+       margin-top: 10px;
+       padding: 5px;
+  }
+  .padding {
+   display: flex;
+   justify-content: center;
+  }
+   .blue {
+       border-style: solid;
+       border-color: blue;
+       border-color: rgb(45, 42, 115);
+       background-color: blue;
+       background-color: rgba(45, 42, 115, 0.5);
+   }
+   
+   .gif{
+      z-index: 2;
+      float:left;
+      left:20%;
+   }
+   
+   .house{
+     z-index: -2;
+   }
+   
+   .lights{
+     float: right;
+     display: block;
+     position: relative;
+     overflow: auto;
+   }
+  
+  /*  */
+  .ali {
+    width: 70vw;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: rotation 6s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .present {
+    animation: color-change 1s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
+  
